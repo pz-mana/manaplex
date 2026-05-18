@@ -244,9 +244,13 @@
     margin-bottom: 14px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    text-align: center;
+    white-space: nowrap;
   }
-  .rule-title::before { content: ''; width: 18px; height: 1px; background: var(--gold-dim); display: inline-block; }
+  .rule-title::before { content: '—'; color: var(--gold-dim); }
+  .rule-title::after { content: '—'; color: var(--gold-dim); }
 
   .ok-item, .ng-item {
     display: flex;
@@ -449,29 +453,6 @@
       <span class="excl-tag other">Ani SPトリートメント</span>
     </div>
   </div>
-
-  <!-- 具体例 -->
-  <table class="example-table">
-    <thead>
-      <tr>
-        <th>当月購入額（例）</th>
-        <th>翌月の会員区分</th>
-        <th>MANAPLEXの購入</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>¥20,000（税込）</td>
-        <td><span class="tier-badge badge-standard">MANAPLEX 会員</span></td>
-        <td class="result-ok">✓ 購入可能</td>
-      </tr>
-      <tr>
-        <td>¥50,000（税込）</td>
-        <td><span class="tier-badge badge-premium">✦ プレミアム会員</span></td>
-        <td class="result-ok">✓ 購入可能</td>
-      </tr>
-    </tbody>
-  </table>
 
   <!-- 所属形態別条件 -->
   <div class="section-label"><span>所属形態別 取り扱い条件</span></div>
